@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Linking the stylesheet -->
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Linking the Jquery script -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$(".fa-search").click(function() {
+				$(".icon").toggleClass("active");
+				$("input[type='text']").toggleClass("active");
+			});
+		});
+	</script>
+
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<style>
+
+		/* Importing the fonts */
+		@import url(
+'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+		* {
+			margin: 0;
+			padding: 0;
+			outline: none;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		/* Body of the page */
+		body {
+			background: #f2f2f2;
+		}
+
+		/* Styling all the elements in nav as a whole */
+		nav {
+			background: #75caf2;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			height: 70px;
+			padding: 0 100px;
+		}
+
+		/* Styling the logo */
+		nav .logo {
+			color: #fff;
+			font-size: 30px;
+			font-weight: 600;
+			letter-spacing: -1px;
+		}
+
+		/* Styling all the nav items as a whole */
+		nav .nav-items {
+			display: flex;
+			flex: 1;
+			padding: 0 0 0 200px;
+		}
+
+		/* Styling the list items in the nav tag */
+		nav .nav-items li {
+			list-style: none;
+			padding: 0 10px;
+		}
+
+		/* Styling each list items */
+		nav .nav-items li a {
+			color: #fff;
+			font-size: 15px;
+			font-weight: 500;
+			text-decoration: none;
+		}
+
+		/* Setting the hover colour on the list items*/
+		
+		nav .nav-items li a:hover {
+			color: #19191b;
+		}
+		
+		nav .searchbar {
+			position: relative;
+		}
+
+		/* Styling the search box where the
+			input would be given */
+		nav .searchbar input[type="text"] {
+			border: 0;
+			padding: 0;
+			width: 0px;
+			height: 35px;
+			border-radius: 3px;
+			transition: all 0.3s ease;
+		}
+
+		/* Styling the search bar icon */
+		nav .searchbar .icon {
+			display: flex;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 35px;
+			height: 100%;
+			background: none;
+			border-radius: 3px;
+			color: #fff;
+			transition: all 0.5s 0.3s ease;
+		}
+		
+		nav .searchbar .icon i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+		}
+		
+		nav .searchbar .icon.active {
+			background: #062333;
+			transition: all 0.3s ease;
+		}
+		
+		nav .searchbar input[type="text"].active {
+			width: 250px;
+			padding: 0 10px;
+			transition: all 0.5s 0.2s ease;
+		}
+		
+		nav .licon li {
+			list-style: none;
+			display: flex;
+		}
+		
+		nav .licon li a {
+			padding: 0 20px;
+		}
+
+		/* Changing the colour of the login
+			icon when hovered over*/
+		
+		.fa-user-circle:hover {
+			color: #0e0d0d !important;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			TheBloggs
+		</div>
+
+		<div class="nav-items">
+
+			<!-- The Menu items -->
+			<li><a href="#">Blogs</a></li>
+			<li><a href="#">Write a Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="login.html">Login</a></li>
+		</div>
+
+		<!-- Defining the search bars -->
+		<div class="searchbar">
+			<input type="text" placeholder="search">
+			<div class="icon">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+
+		<!-- Defining the login button -->
+		<div class="licon">
+			<li>
+				<a href="#">
+					<i class="fas fa-user-circle
+						fa-2x" style="color: white;">
+					</i>
+				</a>
+			</li>
+		</div>
+	</nav>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        />
+      </head>
+      <body>
+        <div class="section-container">
+          <section>
+            <div class="section-heading">
+              <h2 data-aos="fade-left" data-aos-duration="1000">New-Look Rajpath to be inaugrated in Sept. 8</h2>
+            </div>
+            <p data-aos="fade" data-aos-duration="800" data-aos-delay="400">
+                When Rajpath reopens for public next week after a 20-month gap, the visitors will get to see a revamped ...
+            </p>
+            <a id="rajpath" href="blogs.html">Read more...</a>
+            <img
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+              src="rajpath.jpg"
+              alt=""
+            />
+          </section>
+    
+          <section>
+            <div class="section-heading">
+              <h2 data-aos="fade-up" data-aos-duration="1000">3 cheers for INS Vikrant</h2>
+            </div>
+            <p data-aos="fade" data-aos-duration="800" data-aos-delay="400">
+                The commissioning of INS Vikrant, the new avatar of the Indian Navy’s first aircraft carrier...
+            </p>
+            <a id="rajpath" href="blogs2.html">Read more...</a>
+            <img
+              data-aos="fade"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+              src="insvikranta.jpg"
+              alt=""
+            />
+          </section>
+    
+          <section>
+            <div class="section-heading">
+              <h2 data-aos="fade-right" data-aos-duration="1000">Indian Cricket’s Newest Star, Renuka Singh Thakur Credits Success to Mom’s Sacrifice</h2>
+            </div>
+            <p data-aos="fade" data-aos-duration="800" data-aos-delay="400">
+              LRenuka Singh Thakur was just three years old when she lost her father Kehar Singh Thakur, an empl...
+            </p>
+            <a id="rajpath" href="blogs3.html">Know More...</a>
+            <img
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+              src="https://en-media.thebetterindia.com/uploads/2022/08/Renuka-Singh-Thankur-1660134878.jpg?compress=true&quality=80&w=1080&dpr=1.5"
+              alt=""
+            />
+
+          </section>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+        <script>
+          AOS.init();
+        </script>
+      </body>
+    </html>
+
+
+</body>
+
+</html>
